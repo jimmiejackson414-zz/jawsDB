@@ -9,20 +9,25 @@ var source = {
 
     localhost: {
         port: 3306,
-        host: 'localhost',
+        host: '127.0.0.1',
         user: 'root',
-        password: "Njmitx123",
-        database: "starwars"
+        password: "",
+        database: "jawsDB"
     },
     jawsDB: {
 
         // TODO: Add your JawsDB connection info here
+        port: 3306,
+        host: 'jw0ch9vofhcajqg7.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        user: 'ykyyumc8e8fvnkiy',
+        password: "qtmm9siql1yogbxt",
+        database: "e5sznx897bv7qx8m"
     }
 }
 
 
 // TODO: connect your jawsDB connection witht he mysql connection.
-var connection = mysql.createConnection( //enter connection here);
+var connection = mysql.createConnection(source.jawsDB);
 
 
 
